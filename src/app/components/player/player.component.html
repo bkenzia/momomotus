@@ -1,0 +1,16 @@
+<div class="title-container">
+  <h1>Momomotus</h1>
+  <div>
+    <span>🟥 🟡 🟦</span>
+  </div>
+</div>
+
+<main>
+  <p>Pour commencer, quel est ton prénom ?</p>
+  <form  (ngSubmit)="onSubmit()">
+    <input type="text" name="playerName" [(ngModel)]="playerName">
+    <button type="submit" >Let’s go !</button>
+  </form>
+</main>
+
+

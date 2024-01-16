@@ -1,0 +1,117 @@
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 57px;
+}
+hr{
+  border: 1px solid #FFF;
+  margin-top: 22px;
+}
+dialog{
+  border: 2px solid #FFF;
+  background: rgba(43, 43, 43, 0.95);
+  color: #FFF;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  width: 70vw;
+  margin: auto;
+  top:233px;
+
+}
+h2{
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 66px; /* 157.143% */
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+img{
+  margin: 52px 0;
+}
+button{
+  position: relative;
+  left: 69vw;
+  background: #2B2B2B;
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  border: none;
+}
+.container_letters{
+  display: flex;
+  gap: 17px;
+  flex-flow: wrap;
+  width: 48vw;
+  margin: auto;
+  padding-bottom: 85px;
+
+}
+.letter{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px 13px;
+
+
+}
+.validate{
+  border: 1px solid white;
+  border-radius: 84px;
+  padding: 10px 16px;
+}
+.sotum_container{
+  width: 26vw;
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  padding: 85px 0;
+
+}
+.sotum_letter{
+  border: 1px solid;
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  background: #0177C7;
+}
+.red{
+  background: red;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.yellow{
+  background: #FFBD01;
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bleu{
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog_validate_btn, .dialog_validate{
+  text-align: center;
+}
+.dialog_validate{
+  height: 324px;
+}
+.dialog_validate_btn{
+  background: #0177C7;
+  width: 10vw;
+  margin: auto;
+  top: 1rem;
+  position: relative;
+  padding: 1rem;
+}
+

@@ -1,0 +1,22 @@
+.title-container{
+  margin-top: 140px;
+  text-align: center;
+  font-family: Sofia Sans;
+
+}
+main{
+  text-align: center;
+  margin-top: 177px;
+}
+form{
+  margin-top: 27px;
+}
+button{
+  background: #0177C7;
+  color: #FFF;
+  margin-left: 18px;
+  padding: 18px 34px;
+}
+input{
+  padding: 18px 34px;
+}

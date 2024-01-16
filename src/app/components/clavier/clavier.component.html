@@ -1,0 +1,68 @@
+
+<div class="header_container">
+  <p>Prêt.e {{playerName}} ?</p>
+  <h1 class="title-container">Momomotus</h1>
+  <img src="../assets/images/iconInterogation.svg" (click)="myDialog.show()">
+</div>
+<hr>
+
+<main class="container">
+  <dialog #myDialog>
+    <div>
+      <button (click)="myDialog.close()">
+        x
+      </button>
+      <h2>Règles</h2>
+
+      <p>Vous avez six essais pour deviner le mot du jour, entre 6 et 9 lettres, commun à tous.
+        Vous ne pouvez proposer que des mots commençant par la même lettre que le mot recherché, et qui se trouvent dans notre dictionnaire.
+        Les noms propres ne sont pas acceptés.</p>
+      <img src="../assets/images/image.png">
+      <ul>
+        <li> 🟥 Les lettres entourées d'un carré rouge sont bien placées</li>
+        <li>🟡 Les lettres entourées d'un cercle jaune sont mal placées (mais présentes dans le mot).</li>
+        <li> 🟦 Les lettres qui restent sur fond bleu ne sont pas dans le mot.</li>
+      </ul>
+    </div>
+    <div>
+
+    </div>
+  </dialog>
+
+  <div class="sotum_container"><div class="sotum_letter"  *ngFor="let test of sotumTable"><p [ngClass]=" test.state=='true'? 'red' :( test.state=='include'?'yellow':'bleu')">{{test.latter}}</p></div></div>
+
+  <div class="container_letters">
+    <p class="letter" *ngFor="let letter of listLetter" (click)="addLatterInSotumTable(letter)" [ngClass]=" isValide=='true'? 'red' :( isValide=='include'?'yellow':'bleu')">{{letter}}</p>
+    <p class="validate" (click)="Dialog.show() ">valider</p>
+    <p class="validate" (click)="clear()">supprimer</p>
+  </div>
+  <dialog #Dialog>
+    <div>
+      <button (click)="Dialog.close()">
+        x
+      </button>
+      <div *ngIf="validateSotum()">
+        <h2>félicitations {{playerName}} !</h2>
+
+        <p>Le mot était bien PREMICES.
+          Tu l’as découvert en 3 coups !.</p>
+      </div>
+      <div *ngIf="!validateSotum()  " class="dialog_validate">
+        <h2>Oh non {{playerName}} ... {{playerName}} !</h2>
+
+        <p>Ici, tout le monde a une seconde chance !</p>
+        <p (click)="player()" class="dialog_validate_btn">Rééssayer</p>
+      </div>
+
+
+    </div>
+    <div>
+
+    </div>
+  </dialog>
+
+</main>
+
+
+
+
